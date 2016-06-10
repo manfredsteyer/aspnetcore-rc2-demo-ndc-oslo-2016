@@ -1,0 +1,23 @@
+﻿@model FlugDemo.Models.Flight
+@{
+    ViewBag.Title = "Detail";
+}
+
+<table class="table table-striped">
+    <tr>
+        <td>Id: </td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>From: </td>
+        <td>@Model.From</td>
+    </tr>
+    <tr>
+        <td>To: </td>
+        <td>@Model.To</td>
+    </tr>
+    <tr>
+        <td>Date: </td>
+        <td>@Model.Date</td>
+    </tr>
+</table>

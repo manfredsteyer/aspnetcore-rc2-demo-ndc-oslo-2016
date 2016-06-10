@@ -1,0 +1,26 @@
+﻿@model List<FlugDemo.Models.Flight>
+
+@{
+    ViewBag.Title = "Flights";
+}
+<h1>Flights</h1>
+<p>
+    <!-- Twitter Bootstrap -->
+    <table class="table table-striped">
+        @foreach (var flight in Model)
+        {
+            <tr>
+                <td>@flight.Id</td>
+                <td>@flight.Date</td>
+                <td>@flight.From</td>
+                <td>@flight.To</td>
+                <td>
+                    <a asp-action="Detail"
+                       asp-controller="Home"
+                       asp-route-id="@flight.Id">Detail</a>
+                </td>
+
+            </tr>
+        }
+    </table>
+</p>
